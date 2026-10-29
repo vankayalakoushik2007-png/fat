@@ -4,17 +4,27 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero"
+    return a / b
+
 def menu():
     print("\n--- Menu-Driven Calculator ---")
     print("1. Addition")
     print("2. Subtraction")
-    print("3. Exit")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
 
 if __name__ == "__main__":
     while True:
         menu()
         choice = input("Enter choice: ")
-        if choice == '3':
+        if choice == '5':
             break
         if choice in ['1', '2', '3', '4']:
             num1 = float(input("Enter first number: "))
@@ -23,5 +33,9 @@ if __name__ == "__main__":
                 print(f"Result: {add(num1, num2)}")
             elif choice == '2':
                 print(f"Result: {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"Result: {multiply(num1, num2)}")
+            elif choice == '4':
+                print(f"Result: {divide(num1, num2)}")
         else:
             print("Invalid Choice")
