@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: calculator
-        image: vankayalakoushik2007-png/menu-calculator:latest
+        image: 24mis0341/menu-calculator:latest
         imagePullPolicy: Always
 ---
 apiVersion: v1
