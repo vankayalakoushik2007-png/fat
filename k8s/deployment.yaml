@@ -28,6 +28,6 @@ spec:
     app: calculator
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 3006
+      targetPort: 3006
   type: ClusterIP
